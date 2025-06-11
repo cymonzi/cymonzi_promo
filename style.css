@@ -1,0 +1,125 @@
+/* General page styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #ffffff;
+  max-width: 400px;
+  margin: 2rem;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+video {
+  width: 100%;
+  display: block;
+  background: #000;
+}
+
+.caption {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #2b6cb0;
+  font-size: 1rem;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #2b6cb0;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #1a4f8b;
+}
+
+/* YouTube-style button */
+.youtube-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background-color: #FF0000;
+  padding: 0.7rem 1.4rem;
+  border-radius: 50px;
+  font-size: 1.05em;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  transition: background 0.3s, box-shadow 0.3s;
+  white-space: nowrap;
+}
+
+.youtube-btn:hover,
+.youtube-btn:focus {
+  background-color: #cc0000;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.youtube-btn .youtube-icon {
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .youtube-btn {
+    font-size: 0.98em;
+    padding: 0.6rem 1rem;
+    gap: 8px;
+  }
+  .youtube-btn .youtube-icon {
+    height: 22px;
+    width: 22px;
+    min-width: 22px;
+    min-height: 22px;
+  }
+}
