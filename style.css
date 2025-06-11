@@ -100,6 +100,11 @@ video {
   min-height: 24px;
   vertical-align: middle;
   flex-shrink: 0;
+  /* Add a white drop-shadow for visibility on red */
+  filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 1px #fff);
+  /* Optional: add a slight border for even more contrast */
+  border-radius: 50%;
+  background: transparent;
 }
 
 @media (max-width: 480px) {
